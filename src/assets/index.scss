@@ -1,0 +1,82 @@
+$message_background: rgba(233, 211, 172, 0.5);
+$grey: #7B7B7B;
+$table_background: rgb(172, 222, 222);
+$body_background: rgb(214, 243, 243);
+$cell_hover: rgb(138, 203, 201);
+$cell_border: rgb(159, 160, 163);
+
+body{
+    background-color: $body_background;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.fa-xmark,
+.fa-o {
+    font-size: 1.3em;
+    color: $grey;
+}
+.x,
+.o {
+    cursor: pointer;
+    width: 45px;
+}
+
+#title {
+    text-align: center;
+}
+#table {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    background-color: $table_background;
+}
+
+.x,
+.o {
+    cursor: pointer;
+    width: 45px;
+}
+#div {
+    display: flex;
+    justify-content: center;
+}
+#cell:hover {
+    background-color: $cell_hover;
+}
+#wrap{
+    display: flex;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    background-color: $table_background;
+
+}
+#cell{
+    border: 1px solid $cell_border;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#message {
+    position: absolute;
+    margin-top: 100px;
+    z-index: -1;
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $message_background
+}
